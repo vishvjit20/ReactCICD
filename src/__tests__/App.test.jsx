@@ -2,12 +2,14 @@ import { fireEvent, render, screen } from "@testing-library/react";
 import App from "../App";
 import { expect } from "vitest";
 
+// eslint-disable-next-line no-undef
 test("Renders a component", () => {
   render(<App />);
   const linkElement = screen.getByText(/Vite \+ React/i);
   expect(linkElement).toBeInTheDocument();
 });
 
+// eslint-disable-next-line no-undef
 test("Increment Count on Button Click", () => {
   render(<App />);
   const buttonElement = screen.getByText(/count is 0/i);
